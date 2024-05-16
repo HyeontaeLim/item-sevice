@@ -29,7 +29,7 @@ public class ItemRepository {
 
     public void update(Long itemID, Item updateParam) {
         Item findItem = store.get(itemID);
-        findItem.setName(updateParam.getName());
+        findItem.setItemName(updateParam.getItemName());
         findItem.setPrice(updateParam.getPrice());
         findItem.setQuantity(updateParam.getQuantity());
     }
